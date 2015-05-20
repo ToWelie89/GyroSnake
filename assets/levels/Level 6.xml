@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snakeappmap id="-1">
+	<name>Insanity</name>
+	<description>"Insanity in individuals is something rare - but in groups, parties, nations and epochs, it is the rule."\n - Friedrich Nietzsche</description>
+	<difficuly>3</difficuly>
+	<map x="300" y="400" />
+	<gamespeed type="simple">8</gamespeed>
+	<growthspeed type="simple">1</growthspeed>
+	<item type="simple" r="10">1</item>
+	<levelgoal type="greater">15</levelgoal>
+	<player x="154" y="356" r="12" a="90" s="4" />
+	<obstacles>
+		<item x="97" y="324" r="15" />
+		<item x="208" y="326" r="15" />
+		<item x="91" y="277" r="20" />
+		<item x="217" y="276" r="20" />
+		<item x="82" y="217" r="25" />
+		<item x="235" y="218" r="25" />
+		<item x="78" y="138" r="35" />
+		<item x="238" y="137" r="35" />
+		<item x="151" y="65" r="50" />
+	</obstacles>
+</snakeappmap>

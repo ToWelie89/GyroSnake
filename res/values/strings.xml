@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gyro Snake</string>
+    <string name="congrats">Congratulations! You made it to the highscore.\nPlease insert your name to enter and then submit it either only to your phone (locally) or choose to also submit to the global leaderboard.</string>
+    <string name="help_text">To control the snake you have to tilt the phone to the side where you wan\'t the snake to navigate to.\nYou can either choose New game to play every level in order or you can select any level that you have already unlocked.</string>
+    <string name="select_level_text"><b>Select Level</b>\nYou can only select levels that you have unlocked.</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

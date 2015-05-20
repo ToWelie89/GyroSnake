@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/highscore_layout"	
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#00CC00">
+    
+    
+	<RelativeLayout  android:id="@+id/losewin_background"
+	android:background="@drawable/scorescreen"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+		<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+			
+			<TextView android:id="@+id/you_made_it_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/congrats"
+      		style="@style/customText"
+			android:visibility="gone"/>
+			
+			<EditText android:id="@+id/input_edittext"
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:maxLength="8"/>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:orientation="horizontal" >
+
+			    <Button
+			        android:id="@+id/submit_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Submit Locally"
+			        android:visibility="gone" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:orientation="horizontal" >
+
+				<Button
+				    android:id="@+id/submit_globally_button"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Submit Globally"
+				    android:visibility="gone" />
+			</LinearLayout>
+					
+			<LinearLayout 
+    	  			android:layout_width="fill_parent"
+      				android:layout_height="wrap_content"
+					android:orientation="horizontal" 
+					android:layout_centerInParent="true"
+					android:gravity="center_horizontal">
+
+				<Button
+				    android:id="@+id/skip_button"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Exit"
+				    android:visibility="gone" />
+					
+			</LinearLayout>		
+		</LinearLayout>
+	</RelativeLayout>
+
+</FrameLayout>

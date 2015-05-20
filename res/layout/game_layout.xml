@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/game_layout"	
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+	<RelativeLayout android:id="@+id/game_view_holder"  
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:tileMode="repeat"
+	/>
+    
+    
+	<RelativeLayout  
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+		<LinearLayout
+			android:id="@+id/game_menu_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:padding="15dip"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" 
+			android:visibility="gone"
+			>
+	
+			<TextView android:id="@+id/game_menu_text_box"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/congrats"
+      	style="@style/customText"
+			android:visibility="gone"
+			android:layout_marginBottom="5dip"
+			android:gravity="center_vertical|center_horizontal"
+			/>
+	
+			<Button 
+			android:id="@+id/game_menu_button_start" 
+      			android:layout_width="fill_parent"
+      			android:layout_height="wrap_content"
+      			android:text="Start"
+      			android:layout_marginBottom="5dip"
+					android:visibility="gone"
+					
+
+			/>
+			
+			<Button 
+			android:id="@+id/game_menu_button_resume" 
+      			android:layout_width="fill_parent"
+      			android:layout_height="wrap_content"
+      			android:text="Resume"
+      			android:layout_marginBottom="5dip"
+					android:visibility="gone"
+			/>
+			<Button 
+			android:id="@+id/game_menu_button_next_level" 
+      			android:layout_width="fill_parent"
+      			android:layout_height="wrap_content"
+      			android:text="Next Level"
+      			android:layout_marginBottom="5dip"
+					android:visibility="gone"
+			/>
+			
+			<Button 
+			android:id="@+id/game_menu_button_enter_highscore" 
+      			android:layout_width="fill_parent"
+      			android:layout_height="wrap_content"
+      			android:text="Highscore"
+      			android:layout_marginBottom="5dip"
+					android:visibility="gone"
+			/>
+			
+			<Button 
+			android:id="@+id/game_menu_button_restart" 
+      			android:layout_width="fill_parent"
+      			android:layout_height="wrap_content"
+      			android:text="Restart"
+      			android:layout_marginBottom="5dip"
+					android:visibility="gone"
+			/>
+			<Button 
+			android:id="@+id/game_menu_button_menu" 
+      			android:layout_width="fill_parent"
+      			android:layout_height="wrap_content"
+      			android:text="Exit"
+      			android:layout_marginBottom="5dip"
+					android:visibility="gone"
+			/>
+		</LinearLayout>
+	</RelativeLayout>
+</FrameLayout>

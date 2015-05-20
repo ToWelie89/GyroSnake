@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/spelplan"	
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg">
+    
+    <RelativeLayout android:id="@+id/gameViewHolder" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+    />
+    
+    <RelativeLayout
+        android:id="@+id/backgroundImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg" >
+
+        <LinearLayout
+            android:id="@+id/menu_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dip"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/snake_new_game_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="New Game"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/select_level_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="Select Level"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/snake_help_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="Help"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/snake_highscore_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="Highscore"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/snake_settings_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="Settings"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/helpText"
+                style="@style/customText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_text"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/local_scores_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="Local"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/global_scores_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:text="Global"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/highscoreText"
+                style="@style/customText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/sounds_check_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" Sounds" />
+
+            <CheckBox
+                android:id="@+id/music_check_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" Music" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/back_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:text="Back"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/settings_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="54dp"
+            android:visibility="gone" >
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>
